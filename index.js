@@ -135,4 +135,4 @@ function increaseScore(scores){
         }while(score<=50)
     })
 }
-increaseScore([40,10,20,30]);
+increaseScore([46,10,20,30]);
