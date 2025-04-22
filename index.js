@@ -132,7 +132,7 @@ function increaseScore(scores){
         do{
             score+=10;
             console.log(`your new score is:${score}`);
-        }while(score<=50)
+        }while(score<50)
     })
 }
 increaseScore([46,10,20,30]);
