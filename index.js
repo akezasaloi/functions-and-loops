@@ -119,20 +119,21 @@ weatherCondition([12,40,70,13,20,18,4])
 function printUserNames(names){
     let i=0;
     while(i<names.length){
-        console.log(names[i]);
-        i++;
+        console.log(names.shift());
     }
 }
-printUserNames(["Akeza","Shirley","Dani","Mahi","Rigbe"]);
+printUserNames(["Akeza","Shirley","Dani","Mahi","Vicky"]);
 
 //Question 8
 
 function increaseScore(scores){
     scores.forEach((score)=>{
-        do{
+      if(score < 50)
+      { 
+         do{
             score+=10;
             console.log(`your new score is:${score}`);
-        }while(score<50)
+        }while(score<50)}
     })
 }
-increaseScore([46,10,20,30]);
+increaseScore([66,11,20,30]);
