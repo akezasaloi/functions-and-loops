@@ -119,8 +119,11 @@ weatherCondition([12,40,70,13,20,18,4])
 function printUserNames(names){
     let i=0;
     while(i<names.length){
-        console.log(names.shift());
+        let name = names.splice(i,1);
+        console.log(`${name}`);
+        // i++;
     }
+    console.log(names);
 }
 printUserNames(["Akeza","Shirley","Dani","Mahi","Vicky"]);
 
